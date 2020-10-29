@@ -1,4 +1,5 @@
 // Defining Variables //
+
 var number = "0123456789".split("");
 var lower = "abcdefghijklmnopqrstuvwxyz".split("");
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
@@ -7,7 +8,7 @@ var passwordArray = [];
 
 var greetings = alert("Let's get you a password shall we?");
 
-//===================
+// --------------------------------
 
 function generatePassword() {
   var lengthQ = prompt("How long would you like your password to be?");
@@ -36,19 +37,20 @@ function generatePassword() {
      (numberQ !== true && lowerQ !== true && upperQ !== true && specialQ !== true) {
      alert ("Oops! Let's try that again. Please be sure to pick an option!")
     }
+
+// --------------------------------
+
+  var outputArray =[];
+    for (var i = 0; i < lengthQ; i++) {
+      var randomNumber = passwordArray[Math.floor(Math.random() * passwordArray.length)];
+      outputArray.push(randomNumber);
+    }
+
+  var generatingOutput = outputArray.join("");
+  return generatingOutput;
 }
 
-
-// 2.
-//===================
-
-// function optionsStore () {
-//   for (var i = 0; i < lengthQ; i++) {
-//     var randomNumber = Math.floor(Math.random());
-//     if (numberQ === true || lowerQ === true || upperQ === true || specialQ === true)
-//     console.log (randomNumber);
-//   }
-// }
+// --------------------------------
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
