@@ -1,29 +1,3 @@
-// // Defining Variables 
-// var numbers = "0123456789".split("");
-// var lowerCase = "abcdefghijklmnopqrstuvwxyz".split("");
-// var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-// var sc = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~".split("");
-
-// // Defining Alerts, Prompts & Confirms
-// var greetings = alert ("Let's get you a password shall we?")
-
-
-// // Conditions
-// function initial () {
-//   var lengthQuest = prompt ("How long would you like your password to be?")
-//   if (lengthQuest < 8 || lengthQuest > 128 || isNaN(lengthQuest)) {
-//     alert ("You must pick a number between 8 - 128!")
-//   return
-//   }
-
-//   var numQuest = confirm ("Would you like your password to include Numbers?");
-//   var lowQuest = confirm ("Would you like your password to include Lowercase Letters?");
-//   var upQuest = confirm ("Would you like your password to include Uppercase Letters?");
-//   var scQuest = confirm ("Would you like your password to include Special Characters?");
-// }
-
-// -------------------------------------------
-
 // Defining Variables //
 var number = "0123456789".split("");
 var lower = "abcdefghijklmnopqrstuvwxyz".split("");
@@ -38,7 +12,7 @@ var greetings = alert("Let's get you a password shall we?");
 // 1.
 //===================
 
-function passwordOptions() {
+function generatePassword() {
   var lengthQ = prompt("How long would you like your password to be?");
   var numberQ = confirm("Would you like your password to include Numbers?");
   var lowerQ = confirm("Would you like your password to include Lowercase Letters?");
@@ -53,6 +27,7 @@ function passwordOptions() {
       alert ("Oops! Let's try that again. Please be sure to pick an option!")
 
     } 
+  }
 
 // 2.
 //===================
@@ -68,10 +43,10 @@ function optionsStore () {
 
 // 3.
 //===================
-var generateNumber = number * numberQ;
-var generateLower = lower * lowerQ;
-var generateUpper = upper * upperQ;
-var generateSpecial = special * specialQ;
+// var generateNumber = number * numberQ;
+// var generateLower = lower * lowerQ;
+// var generateUpper = upper * upperQ;
+// var generateSpecial = special * specialQ;
 
 // bring in your options that you had from passwordOptions() and store them in a variable
 // function generatingPassword(){
@@ -92,40 +67,3 @@ function writePassword() {
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-}
-
-
-// -------------------------------------------
-
-// SHANI'S CODE //
-
-// let lowerCase = "abcdefghijklmnopqrstuvwxyz".split("");
-// let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-// let specialChar = "!@#$%^&*()".split("");
-// let numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-// function getPasswordOptions() {
-//   let passwordLength = prompt("How long would you like your password to be?")
-//   if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
-//     alert("Must select a number between 8 and 128. Try again!")
-//     return
-//   }
-//   let wantsLower = confirm("Do you want to include lower case letters?");
-//   let wantsUpper = confirm("Do you want to include upper case letters?");
-//   let wantsSpecial = confirm("Do you want to include special characters?");
-//   let wantsNumber = confirm("Do you want to include numbers?");
-//   if (wantsLower === false && wantsUpper === false && wantsSpecial === false && wantsNumber === false) {
-//     alert("Please select at least one option.")
-//     return
-//   }
-//   let criteria = {
-//     length: passwordLength,
-//     lower: wantsLower,
-//     upper: wantsUpper,
-//     special: wantsSpecial,
-//     number: wantsNumber
-//   }
-//    return criteria
-// }
-
-//  -----------------------------
-
