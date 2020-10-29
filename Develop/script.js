@@ -22,15 +22,15 @@ function generatePassword() {
     }
   var lowerQ = confirm("Would you like your password to include Lowercase Letters?");
     if (lowerQ) {
-      passwordArray = passwordArray.concat(number);
+      passwordArray = passwordArray.concat(lower);
     }
   var upperQ = confirm("Would you like your password to include Uppercase Letters?");
     if (upperQ) {
-      passwordArray = passwordArray.concat(number);
+      passwordArray = passwordArray.concat(upper);
     }
   var specialQ = confirm("Would you like your password to include Special Characters?"); 
     if (specialQ) {
-      passwordArray = passwordArray.concat(number);
+      passwordArray = passwordArray.concat(special);
     }
 }
 
