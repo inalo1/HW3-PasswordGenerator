@@ -31,18 +31,13 @@ function generatePassword() {
   var specialQ = confirm("Would you like your password to include Special Characters?"); 
     if (specialQ) {
       passwordArray = passwordArray.concat(special);
+
+    } else if 
+     (numberQ !== true && lowerQ !== true && upperQ !== true && specialQ !== true) {
+     alert ("Oops! Let's try that again. Please be sure to pick an option!")
     }
 }
 
-
-
-
-//  else if 
-//   (numberQ !== true && lowerQ !== true && upperQ !== true && specialQ !== true) {
-//   alert ("Oops! Let's try that again. Please be sure to pick an option!")
-
-// } 
-  
 
 // 2.
 //===================
