@@ -11,6 +11,11 @@ var greetings = alert("Let's get you a password shall we?");
 
 function generatePassword() {
   var lengthQ = prompt("How long would you like your password to be?");
+    if (lengthQ < 8 || lengthQ > 128 || isNaN(lengthQ)) {
+      alert ("Oh no! Please pick a number between 8 - 128 and we'll try this again!");
+      return
+    }
+
   var numberQ = confirm("Would you like your password to include Numbers?");
     if (numberQ) {
       passwordArray = passwordArray.concat(number);
@@ -31,14 +36,12 @@ function generatePassword() {
 
 
 
-    // if (lengthQ < 8 || lengthQ > 128 || isNaN(lengthQ)) {
-    //   alert ("Oh no! Please pick a number between 8 - 128 and we'll try this again!")
 
-    // } else if 
-    //   (numberQ !== true && lowerQ !== true && upperQ !== true && specialQ !== true) {
-    //   alert ("Oops! Let's try that again. Please be sure to pick an option!")
+//  else if 
+//   (numberQ !== true && lowerQ !== true && upperQ !== true && specialQ !== true) {
+//   alert ("Oops! Let's try that again. Please be sure to pick an option!")
 
-    // } 
+// } 
   
 
 // 2.
