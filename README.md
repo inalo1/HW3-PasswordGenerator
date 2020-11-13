@@ -1,5 +1,5 @@
 # JavaScript: Password Generator
-Generating a strong password randomly to provide greater security through JavaScript including special characters
+Random strong password generator, including special characters, to provide greater security.
 
 ## Overview
 
