@@ -6,6 +6,8 @@ Random strong password generator, including special characters, to provide great
 An application that an employee can use to generate a random password based on criteria they’ve selected by modifying the starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS, powered by JavaScript code, with a clean and polished user interface that is responsive.
 
 ## JavaScript Topics Covered
+* Variables
+* Objects
 * Alerts
 * Prompts
 * Confirms
