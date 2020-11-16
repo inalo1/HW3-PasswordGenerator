@@ -24,7 +24,7 @@ An application that an employee can use to generate a random password based on c
 
 
 ## Live Link:
-* Link: [Random Password Generator](https://inalo1.github.io/Professional-Portfolio/)
+* Link: [Random Password Generator](https://inalo1.github.io/Password-Generator/)
 
 ## Online Password Generator Overview:
 ![Password Generator ](https://user-images.githubusercontent.com/73044038/99030457-b4685780-253a-11eb-8b05-8f6657c319f2.png)
